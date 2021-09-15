@@ -61,7 +61,7 @@ while True:
 		(mask, withoutMask) = pred
 
 		label = "Com Mascara" if mask > withoutMask else "Sem Mascara"#Define o rótulo par a box.
-		color = (255, 34, 39) if label == "Mask" else (34, 255, 84)#Define as cores para a box.
+		color = (0, 255, 0) if label == "Com Mascara" else (0, 0, 255)#Define as cores para a box.
 		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)#Adiciona a probabilidade dos dados.
 		cv2.putText(frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
 		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
