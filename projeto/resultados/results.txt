@@ -1,9 +1,0 @@
-Primeiro Treinamento
-
-Mask - 814
-No mask - 436
-
-Treinamento Final
-
-Mask - 3115
-No mask - 2242
